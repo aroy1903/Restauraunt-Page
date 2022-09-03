@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Esteban&family=Italianno&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+span {
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Esteban", serif;
+}
+span:hover {
+  cursor: pointer;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #daeaf1;
+}
+#headerContainer {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#content {
+  height: 600px;
+  width: 900px;
+}
+#slides {
+  height: 100%;
+  width: 100%;
+}
+#mainHeader {
+  font-size: 5rem;
+  font-family: "Italianno", cursive;
+}
+#contactElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#address {
+  width: 340px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+#phone {
+  font-size: 1.25rem;
+}
+#socialMedia {
+  height: 90px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.fa {
+  height: 85px;
+  padding: 20px;
+  font-size: 50px !important;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white !important;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white !important;
+}
+.fa-github {
+  background: black;
+  color: white !important;
+}
+
+a:hover,
+a:focus,
+a:active,
+a:visited,
+a:link {
+  text-decoration: none !important;
+}
+p {
+  font-family: "Esteban", serif;
+}
+#menuDiv {
+  display: flex;
+  flex-direction: column;
+  font-family: "Esteban", serif;
+}
+
+#menuDiv p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#menu3 {
+  margin-bottom: 0 !important;
+}
+#menuHeader {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
